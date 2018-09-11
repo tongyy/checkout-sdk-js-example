@@ -73,7 +73,7 @@ export default class Checkout extends React.PureComponent {
                 <Fragment>
                     <div className={ styles.body }>
                         <Panel body={
-                            <form onSubmit={ (event) => this._submitOrder(event, data.getCustomer().isGuest, data.getConsignments()) }>
+                            <form onSubmit={ (event) => this._submitOrder(event, data.getCustomer().isGuest) }>
                                 <Customer
                                     customer={ data.getCustomer() }
                                     billingAddress={ data.getBillingAddress() }
@@ -157,7 +157,7 @@ export default class Checkout extends React.PureComponent {
         );
     }
 
-    _submitOrder(event, isGuest, consignments) {
+    _submitOrder(event, isGuest) {
         let billingAddressPayload = this.state.billingAddressSameAsShippingAddress ?
             this.state.shippingAddress :
             this.state.billingAddress;
@@ -165,6 +165,7 @@ export default class Checkout extends React.PureComponent {
         let { payment } = this.state;
 
         this.setState({ isPlacingOrder: true });
+        event.preventDefault();
 
         Promise.all([
             isGuest ? this.service.continueAsGuest(this.state.customer) : Promise.resolve(),
