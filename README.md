@@ -40,10 +40,13 @@ npm run build
 
 ## See Also
 
-* [Integrating Checkout JS SDK Example into Cornerstone](https://devcenter-staging-demo.docs.stoplight.io/stencil-docs/templates-directory/new-subpage/implement-a-custom-checkout)
-* [Integrating Checkout JS SDK Example into Cornerstone CDN Example](https://stencil.bigcommerce.com/docs/checkout-sdk-example)
+* [Integrating Checkout JS SDK Example into Cornerstone](https://developer.bigcommerce.com/stencil-docs/template-files/customize-stencil-checkout/checkout-js-sdk/getting-started-in-vanilla-js)
+* [Integrating Checkout JS SDK Example into Cornerstone CDN Example](https://developer.bigcommerce.com/stencil-docs/template-files/customize-stencil-checkout/checkout-js-sdk/implement-a-custom-checkout)
 * [Checkout JS SDK](https://github.com/bigcommerce/checkout-sdk-js)
-* [Storefront APIs](https://developer.bigcommerce.com/api/v3/storefront.html)
+* Storefront APIs
+    - [Storefront Cart](https://developer.bigcommerce.com/api-reference/cart-checkout/storefront-cart-api)
+    - [Storefront Checkout](https://developer.bigcommerce.com/api-reference/cart-checkout/storefront-checkout-api)
+    - [Storefront Orders](https://developer.bigcommerce.com/api-reference/orders/storefront-orders-api)
 * [React](https://reactjs.org/)
 
 ## License
