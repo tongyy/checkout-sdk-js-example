@@ -12,6 +12,7 @@ export default class RadioInput extends React.PureComponent {
                     checked={ this.props.checked }
                     disabled={ this.props.isLoading }
                     onChange={ this.props.onChange }
+                    required
                     className={ styles.input } />
                 { this.props.label }
             </label>
