@@ -11,7 +11,7 @@ Please note that this checkout is a good starting and reference point, but is no
 To pull in this example checkout for quick demos, grab the latest build via the CDN:
 
 ```
-<script src="https://cdn8.bigcommerce.com/s-65xv2m9zph/content/20180927.js"></script>
+<script src="https://cdn11.bigcommerce.com/s-65xv2m9zph/content/20180927.js"></script>
 ```
 
 
