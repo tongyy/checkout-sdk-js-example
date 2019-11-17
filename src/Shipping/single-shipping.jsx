@@ -70,6 +70,8 @@ export default class SingleShipping extends React.PureComponent {
 
     _shouldUpdateShippingAddress(fieldName) {
         const shippingOptionUpdateFields = [
+	        'firstName',
+	        'lastName',
             'address1',
             'address2',
             'city',
